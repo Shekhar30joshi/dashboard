@@ -1,51 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
-    <style>
-        /* Basic styles for the page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Commerce Website</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS in the same file -->
+  <style>
+    /* Style for header and footer */
+    header {
+      background-color: black;
+      color: white;
+      font-style: italic;
+    }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
+    footer {
+      background-color: black;
+      color: white;
+      font-style: italic;
+    }
 
-        main {
-            padding: 20px;
-            text-align: center;
-        }
+    /* Styling the product cards */
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    .card-body {
+      padding: 15px;
+    }
+
+    /* Making the contact us section visually appealing */
+    #contact .btn {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+
+    /* Styling the About Us Section */
+    #about {
+      background-color: #f8f9fa;
+    }
+
+    /* General Button Styling */
+    .btn-primary, .btn-success {
+      font-size: 16px;
+      padding: 12px 20px;
+      background:black
+    }
+
+    .container {
+      max-width: 1200px;
+    }
+
+    section {
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Web Page</h1>
-    </header>
-    <main>
-        <p>This is a simple webpage with HTML and CSS in the same file.</p>
-    </main>
-    <footer>
-        <p>Created by You!</p>
-    </footer>
+
+  <!-- Header Section -->
+  <header class="py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h3">Hill Store</h1>
+        <nav>
+          <a href="#about" class="text-white me-3">About Us</a>
+          <a href="#products" class="text-white me-3">Products</a>
+          <a href="#contact" class="text-white">Contact Us To Deliver</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p>We bring you pure, organic products directly from the pristine Himalayas of Kumaon, Uttarakhand. Grown and gathered with care by local communities, our offerings are natural, chemical-free, and rooted in tradition. From raw honey and herbs to grains and oils, every item reflects the untouched beauty and richness of the mountains.
+
+      Our mission is to promote healthy living while supporting sustainable farming and local livelihoods. With each purchase, you not only choose wellness but also become part of a journey that values purity, tradition, and nature’s true essence.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-5">
+    <div class="container">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <h3>Experience the Himalayas in every product.</h3>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Neo</h5>
+              <p class="card-text">Crafted from the rich, golden milk of Himalayan cows and infused with the purity of the Himalaya’s natural essence, our ghee is a treasure of wellness. Made using traditional methods, it preserves vital nutrients, offering rich flavor, deep nourishment, and the ancient goodness of the sacred mountains.</p>
+              <a href="https://wa.me/919760820826" target="_blank" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Neo</h5>
+              <p class="card-text">Sourced from the mineral-rich soils of Krom Munshari, Uttarakhand, our GI-tagged kidney beans are a powerhouse of nutrition. Grown naturally in the pristine Himalayan climate, these beans are rich in flavor, protein, and essential minerals—perfect for wholesome meals with a touch of authentic mountain purity.</p>
+              <a href="https://wa.me/919760820826" target="_blank" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Neo</h5>
+              <p class="card-text">Made from freshly handpicked Buransh (Rhododendron) flowers of the Himalayas, this natural juice is rich in antioxidants and traditional medicinal benefits. Known to support heart health, boost immunity, and reduce inflammation, it’s a refreshing way to enjoy the healing touch of nature in every vibrant, floral sip.</p>
+              <a href="https://wa.me/919760820826" target="_blank" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Neo</h5>
+            <p class="card-text">Experience the essence of the Himalayas with our handcrafted flavored teas. From soothing Buransh tea to invigorating Ginger Red and refreshing Lemon Red, each blend is made with care using natural ingredients. Sip wellness and tradition in every cup, lovingly prepared to awaken your senses and nourish your soul.</p>
+            <a href="https://wa.me/919760820826" target="_blank" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Neo</h5>
+          <p class="card-text">Our laddoos are made from pure, fresh Finger Millet—locally known as Madua or Koda—grown in the Himalayan region. Rich in calcium, fiber, and essential nutrients, these wholesome treats blend tradition and nutrition. Naturally sweetened and handcrafted, they’re a healthy, delicious way to enjoy the power of ancient grains.</p>
+          <a href="https://wa.me/919760820826" target="_blank" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product 3">
+      <div class="card-body">
+        <h5 class="card-title">Neo</h5>
+        <p class="card-text">Matla Juice is made from fresh, handpicked Himalayan fruits, bursting with natural flavor and goodness. Packed with essential vitamins and antioxidants, each sip delivers pure refreshment and nourishment. Free from additives and preservatives, it’s a healthy, delicious way to enjoy nature’s vibrant bounty in its freshest form.</p>
+        <a href="https://wa.me/919760820826" target="_blank" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feel free to reach out to us via WhatsApp!</p>
+      <a href="https://wa.me/919760820826" target="_blank" class="btn btn-success" style="background:#308f30;">Connect on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Hill Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
